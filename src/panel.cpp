@@ -17,6 +17,8 @@ extern "C" {
     #include "scheduler.h"
     #include "radio.h"
     #include "params/params.h"
+    #include "cw_encoder.h"
+    #include "keyboard.h" 
 }
 
 static lv_obj_t    *obj;
@@ -86,6 +88,19 @@ static void panel_update_info_cb(const char *text) {
     lv_label_set_text(info, text);
 }
 
+static lv_obj_t    *tx_box = NULL;
+
+static void panel_tx_ready_cb(lv_event_t * e) {
+    const char *text = lv_textarea_get_text(tx_box);
+
+    if (text && strlen(text) > 0) {
+        cw_encoder_send(text, false);
+    } else {
+        cw_encoder_stop();
+    }
+    lv_textarea_set_text(tx_box, ""); 
+}
+
 lv_obj_t * panel_init(lv_obj_t *parent) {
     obj = lv_label_create(parent);
 
@@ -110,6 +125,15 @@ lv_obj_t * panel_init(lv_obj_t *parent) {
     lv_obj_add_style(info, &panel_info_style, 0);
     lv_label_set_text(info, "");
 
+    tx_box = lv_textarea_create(parent);
+    lv_textarea_set_one_line(tx_box, true);
+    lv_textarea_set_placeholder_text(tx_box, "type to tx");
+    lv_obj_add_style(tx_box, &panel_style, 0);
+    lv_obj_set_width(tx_box, 400);
+    lv_obj_align_to(tx_box, obj, LV_ALIGN_OUT_BOTTOM_LEFT, 0, 10);
+    lv_obj_add_event_cb(tx_box, panel_tx_ready_cb, LV_EVENT_READY, NULL);
+    lv_obj_add_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
+
     return obj;
 }
 
@@ -132,7 +156,7 @@ void panel_clear() {
         buf_write = buf;
         lv_label_set_text_static(obj, buf);
     }
-}
+}panel_update_visibility
 
 void panel_update_visibility(bool clear) {
     x6100_mode_t    mode = (x6100_mode_t)subject_get_int(cfg_cur.mode);
@@ -155,10 +179,15 @@ void panel_update_visibility(bool clear) {
     if (on) {
         if (lv_obj_has_flag(obj, LV_OBJ_FLAG_HIDDEN)) {
             lv_obj_clear_flag(obj, LV_OBJ_FLAG_HIDDEN);
+            lv_obj_clear_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
+            lv_group_add_obj(keyboard_group, tx_box);
+            lv_group_set_editing(keyboard_group, true);  
             knobs_display(false);
         }
     } else {
         lv_obj_add_flag(obj, LV_OBJ_FLAG_HIDDEN);
+        lv_obj_add_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
+        lv_group_remove_obj(tx_box);
         knobs_display(true);
     }
     if (clear) {
