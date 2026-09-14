@@ -156,7 +156,7 @@ void panel_clear() {
         buf_write = buf;
         lv_label_set_text_static(obj, buf);
     }
-}panel_update_visibility
+}
 
 void panel_update_visibility(bool clear) {
     x6100_mode_t    mode = (x6100_mode_t)subject_get_int(cfg_cur.mode);
