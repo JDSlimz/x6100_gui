@@ -1,0 +1,1397 @@
+# depslib dependency file v1.0
+1789308130 source:/home/josh/x6100_gui/lv_drivers/indev/libinput.c
+	"libinput_drv.h"
+	<stdio.h>
+	<unistd.h>
+	<linux/limits.h>
+	<fcntl.h>
+	<errno.h>
+	<stdbool.h>
+	<dirent.h>
+	<libinput.h>
+	<dev/evdev/input.h>
+	<linux/input.h>
+
+1789308130 /home/josh/x6100_gui/lv_drivers/indev/libinput_drv.h
+	"lv_drv_conf.h"
+	"../../lv_drv_conf.h"
+	"lvgl.h"
+	"lvgl/lvgl.h"
+	<poll.h>
+	"xkb.h"
+
+1789308130 /home/josh/x6100_gui/lv_drv_conf.h
+	"lv_conf.h"
+
+1789308130 /home/josh/x6100_gui/lv_conf.h
+	<stdint.h>
+
+1789308130 /home/josh/x6100_gui/lv_drivers/indev/xkb.h
+	"lv_drv_conf.h"
+	"../../lv_drv_conf.h"
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1789308130 /home/josh/x6100_gui//lv_drv_conf.h
+	"lv_conf.h"
+
+1789308130 /home/josh/x6100_gui//lv_conf.h
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/lvgl.h
+	"src/misc/lv_log.h"
+	"src/misc/lv_timer.h"
+	"src/misc/lv_math.h"
+	"src/misc/lv_mem.h"
+	"src/misc/lv_async.h"
+	"src/misc/lv_anim_timeline.h"
+	"src/misc/lv_printf.h"
+	"src/hal/lv_hal.h"
+	"src/core/lv_obj.h"
+	"src/core/lv_group.h"
+	"src/core/lv_indev.h"
+	"src/core/lv_refr.h"
+	"src/core/lv_disp.h"
+	"src/core/lv_theme.h"
+	"src/font/lv_font.h"
+	"src/font/lv_font_loader.h"
+	"src/font/lv_font_fmt_txt.h"
+	"src/widgets/lv_arc.h"
+	"src/widgets/lv_btn.h"
+	"src/widgets/lv_img.h"
+	"src/widgets/lv_label.h"
+	"src/widgets/lv_line.h"
+	"src/widgets/lv_table.h"
+	"src/widgets/lv_checkbox.h"
+	"src/widgets/lv_bar.h"
+	"src/widgets/lv_slider.h"
+	"src/widgets/lv_btnmatrix.h"
+	"src/widgets/lv_dropdown.h"
+	"src/widgets/lv_roller.h"
+	"src/widgets/lv_textarea.h"
+	"src/widgets/lv_canvas.h"
+	"src/widgets/lv_switch.h"
+	"src/draw/lv_draw.h"
+	"src/lv_api_map.h"
+	"src/extra/lv_extra.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_log.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/lv_conf_internal.h
+	<stdint.h>
+	"lv_conf_kconfig.h"
+	"lv_conf.h"
+	"../../lv_conf.h"
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/lv_conf_kconfig.h
+	"sdkconfig.h"
+	"esp_attr.h"
+	<nuttx/config.h>
+	<lv_rt_thread_conf.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_types.h
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_timer.h
+	"../lv_conf_internal.h"
+	"../hal/lv_hal_tick.h"
+	<stdint.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/hal/lv_hal_tick.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_math.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_mem.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stddef.h>
+	<string.h>
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_async.h
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_anim_timeline.h
+	"lv_anim.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_anim.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stdbool.h>
+	<stddef.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_printf.h
+	<inttypes.h>
+	"../lv_conf_internal.h"
+	<stdarg.h>
+	<stddef.h>
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/hal/lv_hal.h
+	"lv_hal_disp.h"
+	"lv_hal_indev.h"
+	"lv_hal_tick.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/hal/lv_hal_disp.h
+	<stdint.h>
+	<stdbool.h>
+	"lv_hal.h"
+	"../draw/lv_draw.h"
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+	"../misc/lv_ll.h"
+	"../misc/lv_timer.h"
+	"../misc/lv_ll.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw.h
+	"../lv_conf_internal.h"
+	"../misc/lv_style.h"
+	"../misc/lv_txt.h"
+	"lv_img_decoder.h"
+	"lv_img_cache.h"
+	"lv_draw_rect.h"
+	"lv_draw_label.h"
+	"lv_draw_img.h"
+	"lv_draw_line.h"
+	"lv_draw_triangle.h"
+	"lv_draw_arc.h"
+	"lv_draw_mask.h"
+	"lv_draw_transform.h"
+	"lv_draw_layer.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_style.h
+	<stdbool.h>
+	<stdint.h>
+	"../font/lv_font.h"
+	"lv_color.h"
+	"lv_area.h"
+	"lv_anim.h"
+	"lv_txt.h"
+	"lv_types.h"
+	"lv_assert.h"
+	"lv_bidi.h"
+	"lv_style_gen.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/font/lv_font.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"lv_symbol_def.h"
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/font/lv_symbol_def.h
+	"../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_area.h
+	"../lv_conf_internal.h"
+	<stdbool.h>
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_color.h
+	"../lv_conf_internal.h"
+	"lv_assert.h"
+	"lv_math.h"
+	"lv_types.h"
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_assert.h
+	"../lv_conf_internal.h"
+	"lv_log.h"
+	"lv_mem.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_txt.h
+	"../lv_conf_internal.h"
+	<stdbool.h>
+	<stdarg.h>
+	"lv_area.h"
+	"../font/lv_font.h"
+	"lv_printf.h"
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_bidi.h
+	"../lv_conf_internal.h"
+	<stdbool.h>
+	<stdint.h>
+	"lv_txt.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_style_gen.h
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_img_decoder.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	"lv_img_buf.h"
+	"../misc/lv_fs.h"
+	"../misc/lv_types.h"
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_img_buf.h
+	<stdbool.h>
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_fs.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_img_cache.h
+	"lv_img_decoder.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw_rect.h
+	"../lv_conf_internal.h"
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+	"../misc/lv_style.h"
+	"sw/lv_draw_sw_gradient.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/sw/lv_draw_sw_gradient.h
+	"../../misc/lv_color.h"
+	"../../misc/lv_style.h"
+	"lv_draw_sw_dither.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/sw/lv_draw_sw_dither.h
+	"../../core/lv_obj_pos.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_obj_pos.h
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw_label.h
+	"../misc/lv_bidi.h"
+	"../misc/lv_txt.h"
+	"../misc/lv_color.h"
+	"../misc/lv_style.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw_img.h
+	"lv_img_decoder.h"
+	"lv_img_buf.h"
+	"../misc/lv_style.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw_line.h
+	"../lv_conf_internal.h"
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+	"../misc/lv_style.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw_triangle.h
+	"lv_draw_rect.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw_arc.h
+	"../lv_conf_internal.h"
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+	"../misc/lv_style.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw_mask.h
+	<stdbool.h>
+	"../misc/lv_area.h"
+	"../misc/lv_color.h"
+	"../misc/lv_math.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw_transform.h
+	"../lv_conf_internal.h"
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/draw/lv_draw_layer.h
+	"../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/misc/lv_ll.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/hal/lv_hal_indev.h
+	"../lv_conf_internal.h"
+	<stdbool.h>
+	<stdint.h>
+	"../misc/lv_area.h"
+	"../misc/lv_timer.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_obj.h
+	"../lv_conf_internal.h"
+	<stddef.h>
+	<stdbool.h>
+	"../misc/lv_style.h"
+	"../misc/lv_types.h"
+	"../misc/lv_area.h"
+	"../misc/lv_color.h"
+	"../misc/lv_assert.h"
+	"../hal/lv_hal.h"
+	"lv_obj_tree.h"
+	"lv_obj_pos.h"
+	"lv_obj_scroll.h"
+	"lv_obj_style.h"
+	"lv_obj_draw.h"
+	"lv_obj_class.h"
+	"lv_event.h"
+	"lv_group.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_obj_tree.h
+	<stddef.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_obj_scroll.h
+	"../misc/lv_area.h"
+	"../misc/lv_anim.h"
+	"../misc/lv_types.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_obj_style.h
+	<stdint.h>
+	<stdbool.h>
+	"../misc/lv_bidi.h"
+	"lv_obj_style_gen.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_obj_style_gen.h
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_obj_draw.h
+	"../draw/lv_draw.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_obj_class.h
+	<stdint.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_event.h
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_group.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stdbool.h>
+	"../misc/lv_ll.h"
+	"../misc/lv_types.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_indev.h
+	"lv_obj.h"
+	"../hal/lv_hal_indev.h"
+	"lv_group.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_refr.h
+	"lv_obj.h"
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_disp.h
+	"../hal/lv_hal.h"
+	"lv_obj.h"
+	"lv_theme.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/core/lv_theme.h
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/font/lv_font_loader.h
+
+1789309567 /home/josh/x6100_gui/lvgl/src/font/lv_font_fmt_txt.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"lv_font.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_arc.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_btn.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_img.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"../misc/lv_fs.h"
+	"../draw/lv_draw.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_label.h
+	"../lv_conf_internal.h"
+	<stdarg.h>
+	"../core/lv_obj.h"
+	"../font/lv_font.h"
+	"../font/lv_symbol_def.h"
+	"../misc/lv_txt.h"
+	"../draw/lv_draw.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_line.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_table.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"lv_label.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_checkbox.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_bar.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"../misc/lv_anim.h"
+	"lv_btn.h"
+	"lv_label.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_slider.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"lv_bar.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_btnmatrix.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_dropdown.h
+	"../lv_conf_internal.h"
+	"../widgets/lv_label.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_roller.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"lv_label.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_textarea.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"lv_label.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_canvas.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"../widgets/lv_img.h"
+	"../draw/lv_draw_img.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/widgets/lv_switch.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/lv_api_map.h
+	"../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/lv_extra.h
+	"layouts/lv_layouts.h"
+	"libs/lv_libs.h"
+	"others/lv_others.h"
+	"themes/lv_themes.h"
+	"widgets/lv_widgets.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/layouts/lv_layouts.h
+	"flex/lv_flex.h"
+	"grid/lv_grid.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/layouts/flex/lv_flex.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/layouts/grid/lv_grid.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/lv_libs.h
+	"bmp/lv_bmp.h"
+	"fsdrv/lv_fsdrv.h"
+	"png/lv_png.h"
+	"gif/lv_gif.h"
+	"qrcode/lv_qrcode.h"
+	"sjpg/lv_sjpg.h"
+	"freetype/lv_freetype.h"
+	"rlottie/lv_rlottie.h"
+	"ffmpeg/lv_ffmpeg.h"
+	"tiny_ttf/lv_tiny_ttf.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/bmp/lv_bmp.h
+	"../../../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/fsdrv/lv_fsdrv.h
+	"../../../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/png/lv_png.h
+	"../../../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/gif/lv_gif.h
+	"../../../lvgl.h"
+	"gifdec.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/lvgl.h
+	"../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/gif/gifdec.h
+	<stdint.h>
+	"../../../misc/lv_fs.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/qrcode/lv_qrcode.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/sjpg/lv_sjpg.h
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/freetype/lv_freetype.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/rlottie/lv_rlottie.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/libs/tiny_ttf/lv_tiny_ttf.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/others/lv_others.h
+	"snapshot/lv_snapshot.h"
+	"monkey/lv_monkey.h"
+	"gridnav/lv_gridnav.h"
+	"fragment/lv_fragment.h"
+	"imgfont/lv_imgfont.h"
+	"msg/lv_msg.h"
+	"ime/lv_ime_pinyin.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/others/snapshot/lv_snapshot.h
+	<stdint.h>
+	<stddef.h>
+	"../../../lv_conf_internal.h"
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/others/monkey/lv_monkey.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/others/gridnav/lv_gridnav.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/others/fragment/lv_fragment.h
+	"../../../lv_conf_internal.h"
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/others/imgfont/lv_imgfont.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/others/msg/lv_msg.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/others/ime/lv_ime_pinyin.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/themes/lv_themes.h
+	"default/lv_theme_default.h"
+	"mono/lv_theme_mono.h"
+	"basic/lv_theme_basic.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/themes/default/lv_theme_default.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/themes/mono/lv_theme_mono.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/themes/basic/lv_theme_basic.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/lv_widgets.h
+	"animimg/lv_animimg.h"
+	"calendar/lv_calendar.h"
+	"calendar/lv_calendar_header_arrow.h"
+	"calendar/lv_calendar_header_dropdown.h"
+	"chart/lv_chart.h"
+	"keyboard/lv_keyboard.h"
+	"list/lv_list.h"
+	"menu/lv_menu.h"
+	"msgbox/lv_msgbox.h"
+	"meter/lv_meter.h"
+	"spinbox/lv_spinbox.h"
+	"spinner/lv_spinner.h"
+	"tabview/lv_tabview.h"
+	"tileview/lv_tileview.h"
+	"win/lv_win.h"
+	"colorwheel/lv_colorwheel.h"
+	"led/lv_led.h"
+	"imgbtn/lv_imgbtn.h"
+	"span/lv_span.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/animimg/lv_animimg.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/calendar/lv_calendar.h
+	"../../../widgets/lv_btnmatrix.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/chart/lv_chart.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/keyboard/lv_keyboard.h
+	"../../../widgets/lv_btnmatrix.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/list/lv_list.h
+	"../../../core/lv_obj.h"
+	"../../layouts/flex/lv_flex.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/menu/lv_menu.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/msgbox/lv_msgbox.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/meter/lv_meter.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/spinbox/lv_spinbox.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/spinner/lv_spinner.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/tabview/lv_tabview.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/tileview/lv_tileview.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/win/lv_win.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/led/lv_led.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui/lvgl/src/extra/widgets/span/lv_span.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/lvgl.h
+	"src/misc/lv_log.h"
+	"src/misc/lv_timer.h"
+	"src/misc/lv_math.h"
+	"src/misc/lv_mem.h"
+	"src/misc/lv_async.h"
+	"src/misc/lv_anim_timeline.h"
+	"src/misc/lv_printf.h"
+	"src/hal/lv_hal.h"
+	"src/core/lv_obj.h"
+	"src/core/lv_group.h"
+	"src/core/lv_indev.h"
+	"src/core/lv_refr.h"
+	"src/core/lv_disp.h"
+	"src/core/lv_theme.h"
+	"src/font/lv_font.h"
+	"src/font/lv_font_loader.h"
+	"src/font/lv_font_fmt_txt.h"
+	"src/widgets/lv_arc.h"
+	"src/widgets/lv_btn.h"
+	"src/widgets/lv_img.h"
+	"src/widgets/lv_label.h"
+	"src/widgets/lv_line.h"
+	"src/widgets/lv_table.h"
+	"src/widgets/lv_checkbox.h"
+	"src/widgets/lv_bar.h"
+	"src/widgets/lv_slider.h"
+	"src/widgets/lv_btnmatrix.h"
+	"src/widgets/lv_dropdown.h"
+	"src/widgets/lv_roller.h"
+	"src/widgets/lv_textarea.h"
+	"src/widgets/lv_canvas.h"
+	"src/widgets/lv_switch.h"
+	"src/draw/lv_draw.h"
+	"src/lv_api_map.h"
+	"src/extra/lv_extra.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_log.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/lv_conf_internal.h
+	<stdint.h>
+	"lv_conf_kconfig.h"
+	"lv_conf.h"
+	"../../lv_conf.h"
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/lv_conf_kconfig.h
+	"sdkconfig.h"
+	"esp_attr.h"
+	<nuttx/config.h>
+	<lv_rt_thread_conf.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_types.h
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_timer.h
+	"../lv_conf_internal.h"
+	"../hal/lv_hal_tick.h"
+	<stdint.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/hal/lv_hal_tick.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_math.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_mem.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stddef.h>
+	<string.h>
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_async.h
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_anim_timeline.h
+	"lv_anim.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_anim.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stdbool.h>
+	<stddef.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_printf.h
+	<inttypes.h>
+	"../lv_conf_internal.h"
+	<stdarg.h>
+	<stddef.h>
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/hal/lv_hal.h
+	"lv_hal_disp.h"
+	"lv_hal_indev.h"
+	"lv_hal_tick.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/hal/lv_hal_disp.h
+	<stdint.h>
+	<stdbool.h>
+	"lv_hal.h"
+	"../draw/lv_draw.h"
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+	"../misc/lv_ll.h"
+	"../misc/lv_timer.h"
+	"../misc/lv_ll.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw.h
+	"../lv_conf_internal.h"
+	"../misc/lv_style.h"
+	"../misc/lv_txt.h"
+	"lv_img_decoder.h"
+	"lv_img_cache.h"
+	"lv_draw_rect.h"
+	"lv_draw_label.h"
+	"lv_draw_img.h"
+	"lv_draw_line.h"
+	"lv_draw_triangle.h"
+	"lv_draw_arc.h"
+	"lv_draw_mask.h"
+	"lv_draw_transform.h"
+	"lv_draw_layer.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_style.h
+	<stdbool.h>
+	<stdint.h>
+	"../font/lv_font.h"
+	"lv_color.h"
+	"lv_area.h"
+	"lv_anim.h"
+	"lv_txt.h"
+	"lv_types.h"
+	"lv_assert.h"
+	"lv_bidi.h"
+	"lv_style_gen.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/font/lv_font.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"lv_symbol_def.h"
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/font/lv_symbol_def.h
+	"../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_area.h
+	"../lv_conf_internal.h"
+	<stdbool.h>
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_color.h
+	"../lv_conf_internal.h"
+	"lv_assert.h"
+	"lv_math.h"
+	"lv_types.h"
+	<stdint.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_assert.h
+	"../lv_conf_internal.h"
+	"lv_log.h"
+	"lv_mem.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_txt.h
+	"../lv_conf_internal.h"
+	<stdbool.h>
+	<stdarg.h>
+	"lv_area.h"
+	"../font/lv_font.h"
+	"lv_printf.h"
+	"lv_types.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_bidi.h
+	"../lv_conf_internal.h"
+	<stdbool.h>
+	<stdint.h>
+	"lv_txt.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_style_gen.h
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_img_decoder.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	"lv_img_buf.h"
+	"../misc/lv_fs.h"
+	"../misc/lv_types.h"
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_img_buf.h
+	<stdbool.h>
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_fs.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_img_cache.h
+	"lv_img_decoder.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw_rect.h
+	"../lv_conf_internal.h"
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+	"../misc/lv_style.h"
+	"sw/lv_draw_sw_gradient.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/sw/lv_draw_sw_gradient.h
+	"../../misc/lv_color.h"
+	"../../misc/lv_style.h"
+	"lv_draw_sw_dither.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/sw/lv_draw_sw_dither.h
+	"../../core/lv_obj_pos.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_obj_pos.h
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw_label.h
+	"../misc/lv_bidi.h"
+	"../misc/lv_txt.h"
+	"../misc/lv_color.h"
+	"../misc/lv_style.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw_img.h
+	"lv_img_decoder.h"
+	"lv_img_buf.h"
+	"../misc/lv_style.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw_line.h
+	"../lv_conf_internal.h"
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+	"../misc/lv_style.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw_triangle.h
+	"lv_draw_rect.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw_arc.h
+	"../lv_conf_internal.h"
+	"../misc/lv_color.h"
+	"../misc/lv_area.h"
+	"../misc/lv_style.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw_mask.h
+	<stdbool.h>
+	"../misc/lv_area.h"
+	"../misc/lv_color.h"
+	"../misc/lv_math.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw_transform.h
+	"../lv_conf_internal.h"
+	"../misc/lv_area.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/draw/lv_draw_layer.h
+	"../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/misc/lv_ll.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/hal/lv_hal_indev.h
+	"../lv_conf_internal.h"
+	<stdbool.h>
+	<stdint.h>
+	"../misc/lv_area.h"
+	"../misc/lv_timer.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_obj.h
+	"../lv_conf_internal.h"
+	<stddef.h>
+	<stdbool.h>
+	"../misc/lv_style.h"
+	"../misc/lv_types.h"
+	"../misc/lv_area.h"
+	"../misc/lv_color.h"
+	"../misc/lv_assert.h"
+	"../hal/lv_hal.h"
+	"lv_obj_tree.h"
+	"lv_obj_pos.h"
+	"lv_obj_scroll.h"
+	"lv_obj_style.h"
+	"lv_obj_draw.h"
+	"lv_obj_class.h"
+	"lv_event.h"
+	"lv_group.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_obj_tree.h
+	<stddef.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_obj_scroll.h
+	"../misc/lv_area.h"
+	"../misc/lv_anim.h"
+	"../misc/lv_types.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_obj_style.h
+	<stdint.h>
+	<stdbool.h>
+	"../misc/lv_bidi.h"
+	"lv_obj_style_gen.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_obj_style_gen.h
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_obj_draw.h
+	"../draw/lv_draw.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_obj_class.h
+	<stdint.h>
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_event.h
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_group.h
+	"../lv_conf_internal.h"
+	<stdint.h>
+	<stdbool.h>
+	"../misc/lv_ll.h"
+	"../misc/lv_types.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_indev.h
+	"lv_obj.h"
+	"../hal/lv_hal_indev.h"
+	"lv_group.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_refr.h
+	"lv_obj.h"
+	<stdbool.h>
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_disp.h
+	"../hal/lv_hal.h"
+	"lv_obj.h"
+	"lv_theme.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/core/lv_theme.h
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/font/lv_font_loader.h
+
+1789309567 /home/josh/x6100_gui//lvgl/src/font/lv_font_fmt_txt.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"lv_font.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_arc.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_btn.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_img.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"../misc/lv_fs.h"
+	"../draw/lv_draw.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_label.h
+	"../lv_conf_internal.h"
+	<stdarg.h>
+	"../core/lv_obj.h"
+	"../font/lv_font.h"
+	"../font/lv_symbol_def.h"
+	"../misc/lv_txt.h"
+	"../draw/lv_draw.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_line.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_table.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"lv_label.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_checkbox.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_bar.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"../misc/lv_anim.h"
+	"lv_btn.h"
+	"lv_label.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_slider.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"lv_bar.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_btnmatrix.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_dropdown.h
+	"../lv_conf_internal.h"
+	"../widgets/lv_label.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_roller.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"lv_label.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_textarea.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"lv_label.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_canvas.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+	"../widgets/lv_img.h"
+	"../draw/lv_draw_img.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/widgets/lv_switch.h
+	"../lv_conf_internal.h"
+	"../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/lv_api_map.h
+	"../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/lv_extra.h
+	"layouts/lv_layouts.h"
+	"libs/lv_libs.h"
+	"others/lv_others.h"
+	"themes/lv_themes.h"
+	"widgets/lv_widgets.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/layouts/lv_layouts.h
+	"flex/lv_flex.h"
+	"grid/lv_grid.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/layouts/flex/lv_flex.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/layouts/grid/lv_grid.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/lv_libs.h
+	"bmp/lv_bmp.h"
+	"fsdrv/lv_fsdrv.h"
+	"png/lv_png.h"
+	"gif/lv_gif.h"
+	"qrcode/lv_qrcode.h"
+	"sjpg/lv_sjpg.h"
+	"freetype/lv_freetype.h"
+	"rlottie/lv_rlottie.h"
+	"ffmpeg/lv_ffmpeg.h"
+	"tiny_ttf/lv_tiny_ttf.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/bmp/lv_bmp.h
+	"../../../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/fsdrv/lv_fsdrv.h
+	"../../../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/png/lv_png.h
+	"../../../lv_conf_internal.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/gif/lv_gif.h
+	"../../../lvgl.h"
+	"gifdec.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/lvgl.h
+	"../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/gif/gifdec.h
+	<stdint.h>
+	"../../../misc/lv_fs.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/qrcode/lv_qrcode.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/sjpg/lv_sjpg.h
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/freetype/lv_freetype.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/rlottie/lv_rlottie.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/libs/tiny_ttf/lv_tiny_ttf.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/others/lv_others.h
+	"snapshot/lv_snapshot.h"
+	"monkey/lv_monkey.h"
+	"gridnav/lv_gridnav.h"
+	"fragment/lv_fragment.h"
+	"imgfont/lv_imgfont.h"
+	"msg/lv_msg.h"
+	"ime/lv_ime_pinyin.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/others/snapshot/lv_snapshot.h
+	<stdint.h>
+	<stddef.h>
+	"../../../lv_conf_internal.h"
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/others/monkey/lv_monkey.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/others/gridnav/lv_gridnav.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/others/fragment/lv_fragment.h
+	"../../../lv_conf_internal.h"
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/others/imgfont/lv_imgfont.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/others/msg/lv_msg.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/others/ime/lv_ime_pinyin.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/themes/lv_themes.h
+	"default/lv_theme_default.h"
+	"mono/lv_theme_mono.h"
+	"basic/lv_theme_basic.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/themes/default/lv_theme_default.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/themes/mono/lv_theme_mono.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/themes/basic/lv_theme_basic.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/lv_widgets.h
+	"animimg/lv_animimg.h"
+	"calendar/lv_calendar.h"
+	"calendar/lv_calendar_header_arrow.h"
+	"calendar/lv_calendar_header_dropdown.h"
+	"chart/lv_chart.h"
+	"keyboard/lv_keyboard.h"
+	"list/lv_list.h"
+	"menu/lv_menu.h"
+	"msgbox/lv_msgbox.h"
+	"meter/lv_meter.h"
+	"spinbox/lv_spinbox.h"
+	"spinner/lv_spinner.h"
+	"tabview/lv_tabview.h"
+	"tileview/lv_tileview.h"
+	"win/lv_win.h"
+	"colorwheel/lv_colorwheel.h"
+	"led/lv_led.h"
+	"imgbtn/lv_imgbtn.h"
+	"span/lv_span.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/animimg/lv_animimg.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/calendar/lv_calendar.h
+	"../../../widgets/lv_btnmatrix.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/chart/lv_chart.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/keyboard/lv_keyboard.h
+	"../../../widgets/lv_btnmatrix.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/list/lv_list.h
+	"../../../core/lv_obj.h"
+	"../../layouts/flex/lv_flex.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/menu/lv_menu.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/msgbox/lv_msgbox.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/meter/lv_meter.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/spinbox/lv_spinbox.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/spinner/lv_spinner.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/tabview/lv_tabview.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/tileview/lv_tileview.h
+	"../../../core/lv_obj.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/win/lv_win.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/led/lv_led.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h
+	"../../../lvgl.h"
+
+1789309567 /home/josh/x6100_gui//lvgl/src/extra/widgets/span/lv_span.h
+	"../../../lvgl.h"
+
+1789308130 source:/home/josh/x6100_gui/lv_drivers/indev/evdev.c
+	"evdev.h"
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	<dev/evdev/input.h>
+	<linux/input.h>
+	"xkb.h"
+
+1789308130 /home/josh/x6100_gui/lv_drivers/indev/evdev.h
+	"lv_drv_conf.h"
+	"../../lv_drv_conf.h"
+	"lvgl.h"
+	"lvgl/lvgl.h"
+
+1789308130 source:/home/josh/x6100_gui/lv_drivers/indev/xkb.c
+	"xkb.h"
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<xkbcommon/xkbcommon.h>
+
+1789308130 source:/home/josh/x6100_gui/src/cfg/atu.c
+	"atu.private.h"
+	"cfg.h"
+	"../lvgl/lvgl.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1789308130 /home/josh/x6100_gui/src/cfg/atu.private.h
+	"atu.h"
+	"stdbool.h"
+	<sqlite3.h>
+
+1789308130 /home/josh/x6100_gui/src/cfg/atu.h
+	"subjects.h"
+
+1789308130 /home/josh/x6100_gui/src/cfg/subjects.h
+	<mutex>
+	<algorithm>
+	<list>
+	<type_traits>
+	<thread>
+	<atomic>
+	<vector>
+	<stdbool.h>
+	<stdint.h>
+
+1789308130 /home/josh/x6100_gui/src/cfg/cfg.h
+	"common.h"
+	"atu.h"
+	"band.h"
+	<pthread.h>
+	<sqlite3.h>
+
+1789308130 /home/josh/x6100_gui/src/cfg/common.h
+	"subjects.h"
+
+1789308130 /home/josh/x6100_gui/src/cfg/band.h
+	"common.h"
+	<aether_radio/x6100_control/control.h>
+
+1789309514 /home/josh/x6100_gui/third-party/aether_radio/x6100_control/include//aether_radio/x6100_control/control.h
+	<stdint.h>
+	"aether_radio/x6100_control/low/control.h"
+
+1789309514 /home/josh/x6100_gui/third-party/aether_radio/x6100_control/include//aether_radio/x6100_control/low/control.h
+	"aether_radio/x6100_control/api.h"
+	<stdbool.h>
+	<stdint.h>
+
+1789311174 /home/josh/x6100_gui/third-party/aether_radio/x6100_control/include//aether_radio/x6100_control/api.h
+
+1789308130 source:/home/josh/x6100_gui/src/cfg/band.c
+	"band.private.h"
+	"cfg.private.h"
+	"transverter.h"
+	"../lvgl/lvgl.h"
+	"band.h"
+	<aether_radio/x6100_control/control.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+
+1789308130 /home/josh/x6100_gui/src/cfg/band.private.h
+	"band.h"
+	<sqlite3.h>
+
+1789308130 /home/josh/x6100_gui/src/cfg/cfg.private.h
+	"cfg.h"
+	<pthread.h>
+	<sqlite3.h>
+
+1789308130 /home/josh/x6100_gui/src/cfg/transverter.h
+	"cfg.h"
+
