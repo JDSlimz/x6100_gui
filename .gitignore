@@ -56,3 +56,6 @@ images/*.png
 _build/
 build/
 x6100/x6100/gui-build.log
+x6100/x6100/x6100_gui
+third-party/aether_radio/x6100_control
+x6100/
