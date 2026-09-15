@@ -42,6 +42,7 @@ extern lv_style_t   panel_top_style;
 extern lv_style_t   panel_mid_style;
 extern lv_style_t   panel_bottom_style;
 extern lv_style_t   pannel_style;
+extern lv_style_t   cw_tx_style;
 
 extern lv_style_t   dialog_style;
 extern lv_style_t   dialog_item_style;
