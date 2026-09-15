@@ -105,7 +105,7 @@ lv_obj_t * pannel_init(lv_obj_t *parent) {
     tx_box = lv_textarea_create(parent);
     lv_textarea_set_one_line(tx_box, true);
     lv_textarea_set_placeholder_text(tx_box, "type to tx");
-    lv_obj_add_style(obj, &cw_tx_style, 0);
+    lv_obj_add_style(tx_box, &cw_tx_style, 0);
     lv_obj_add_event_cb(tx_box, tx_box_ready_cb, LV_EVENT_READY, NULL);
     lv_obj_add_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
 
