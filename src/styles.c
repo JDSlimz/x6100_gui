@@ -28,6 +28,7 @@ lv_style_t  panel_top_style;
 lv_style_t  panel_mid_style;
 lv_style_t  panel_bottom_style;
 lv_style_t  pannel_style;
+lv_style_t  cw_tx_style;
 
 lv_style_t  dialog_style;
 lv_style_t  dialog_item_style;
@@ -116,7 +117,7 @@ void styles_init() {
     lv_style_set_text_color(&pannel_style, lv_color_white());
     lv_style_set_text_font(&pannel_style, &sony_38);
     lv_style_set_width(&pannel_style, 795);
-    lv_style_set_height(&pannel_style, 182);
+    lv_style_set_height(&pannel_style, 100);
     lv_style_set_x(&pannel_style, 800 / 2 - (795 / 2));
     lv_style_set_y(&pannel_style, 230);
     lv_style_set_radius(&pannel_style, 0);
@@ -124,6 +125,19 @@ void styles_init() {
     lv_style_set_bg_img_opa(&pannel_style, LV_OPA_COVER);
     lv_style_set_pad_ver(&pannel_style, 10);
     lv_style_set_pad_hor(&pannel_style, 10);
+
+    lv_style_init(&cw_tx_style);
+    lv_style_set_text_color(&cw_tx_style, lv_color_white());
+    lv_style_set_text_font(&cw_tx_style, &sony_38);
+    lv_style_set_width(&cw_tx_style, 795);
+    lv_style_set_height(&cw_tx_style, 40);
+    lv_style_set_x(&cw_tx_style, 800 / 2 - (795 / 2));
+    lv_style_set_y(&cw_tx_style, 335);
+    lv_style_set_radius(&cw_tx_style, 0);
+    lv_style_set_bg_img_src(&cw_tx_style, PATH "images/pannel.bin");
+    lv_style_set_bg_img_opa(&cw_tx_style, LV_OPA_COVER);
+    lv_style_set_pad_ver(&cw_tx_style, 10);
+    lv_style_set_pad_hor(&cw_tx_style, 10);
 
     lv_style_init(&dialog_style);
     lv_style_set_text_color(&dialog_style, lv_color_white());

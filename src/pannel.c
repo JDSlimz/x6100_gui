@@ -105,18 +105,7 @@ lv_obj_t * pannel_init(lv_obj_t *parent) {
     tx_box = lv_textarea_create(parent);
     lv_textarea_set_one_line(tx_box, true);
     lv_textarea_set_placeholder_text(tx_box, "type to tx");
-
-    lv_obj_remove_style(tx_box, NULL, LV_STATE_ANY | LV_PART_MAIN);
-    lv_obj_set_size(tx_box, 775, 40);
-
-    lv_obj_set_style_text_color(tx_box, lv_color_white(), LV_PART_MAIN);
-    lv_obj_set_style_text_color(tx_box, lv_color_white(), LV_PART_TEXTAREA_PLACEHOLDER);
-    lv_obj_set_style_bg_color(tx_box, lv_color_black(), 0);
-    lv_obj_set_style_bg_opa(tx_box, LV_OPA_60, 0);
-    lv_obj_set_style_border_color(tx_box, lv_color_white(), 0);
-    lv_obj_set_style_border_width(tx_box, 1, 0);
-
-    lv_obj_align(tx_box, LV_ALIGN_BOTTOM_LEFT, 12, -12);
+    lv_obj_add_style(obj, &cw_tx_style, 0);
     lv_obj_add_event_cb(tx_box, tx_box_ready_cb, LV_EVENT_READY, NULL);
     lv_obj_add_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
 
