@@ -15,8 +15,11 @@
 #include "radio.h"
 #include "params/params.h"
 #include "rtty.h"
+#include "cw_encoder.h"
+#include "keyboard.h"
 
 static lv_obj_t     *obj;
+static lv_obj_t     *tx_box = NULL;
 static char         buf[1024];
 static char         tmp_buf[1024];
 static char         *last_line;
@@ -80,12 +83,42 @@ static void pannel_update_cb(lv_event_t * e) {
     lv_label_set_text_static(obj, buf);
 }
 
+
+static void tx_box_ready_cb(lv_event_t * e) {
+    const char *text = lv_textarea_get_text(tx_box);
+
+    if (text && strlen(text) > 0) {
+        cw_encoder_send(text, false);
+    } else {
+        cw_encoder_stop();
+    }
+    lv_textarea_set_text(tx_box, "");
+}
+
 lv_obj_t * pannel_init(lv_obj_t *parent) {
     obj = lv_label_create(parent);
 
     lv_obj_add_style(obj, &pannel_style, 0);
     lv_obj_add_event_cb(obj, pannel_update_cb, EVENT_PANNEL_UPDATE, NULL);
     lv_obj_add_flag(obj, LV_OBJ_FLAG_HIDDEN);
+
+    tx_box = lv_textarea_create(parent);
+    lv_textarea_set_one_line(tx_box, true);
+    lv_textarea_set_placeholder_text(tx_box, "type to tx");
+
+    lv_obj_remove_style(tx_box, NULL, LV_STATE_ANY | LV_PART_MAIN);
+    lv_obj_set_size(tx_box, 775, 40);
+
+    lv_obj_set_style_text_color(tx_box, lv_color_white(), LV_PART_MAIN);
+    lv_obj_set_style_text_color(tx_box, lv_color_white(), LV_PART_TEXTAREA_PLACEHOLDER);
+    lv_obj_set_style_bg_color(tx_box, lv_color_black(), 0);
+    lv_obj_set_style_bg_opa(tx_box, LV_OPA_60, 0);
+    lv_obj_set_style_border_color(tx_box, lv_color_white(), 0);
+    lv_obj_set_style_border_width(tx_box, 1, 0);
+
+    lv_obj_align(tx_box, LV_ALIGN_BOTTOM_LEFT, 12, -12);
+    lv_obj_add_event_cb(tx_box, tx_box_ready_cb, LV_EVENT_READY, NULL);
+    lv_obj_add_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
 
     return obj;
 }
@@ -96,6 +129,8 @@ void pannel_add_text(const char * text) {
 
 void pannel_hide() {
     lv_obj_add_flag(obj, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_add_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
+    lv_group_remove_obj(tx_box);
 }
 
 void pannel_visible() {
@@ -121,7 +156,18 @@ void pannel_visible() {
         last_line = (char *) &buf;
         lv_label_set_text_static(obj, buf);
         lv_obj_clear_flag(obj, LV_OBJ_FLAG_HIDDEN);
+
+        lv_obj_clear_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
+        lv_obj_move_foreground(tx_box);     /* raise above waterfall & later-built widgets */
+
+        lv_group_remove_obj(tx_box);        /* avoid duplicate adds on repeated calls */
+        lv_group_add_obj(keyboard_group, tx_box);
+        lv_group_focus_obj(tx_box);         /* steal focus from spectrum */
+        lv_group_set_editing(keyboard_group, true);
     } else {
         lv_obj_add_flag(obj, LV_OBJ_FLAG_HIDDEN);
+
+        lv_obj_add_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
+        lv_group_remove_obj(tx_box);        /* focus falls back to spectrum */
     }
 }
