@@ -104,13 +104,13 @@ lv_obj_t * pannel_init(lv_obj_t *parent) {
 
     tx_box = lv_obj_create(parent);
     lv_obj_add_style(tx_box, &cw_tx_style, 0);
-    lv_textarea_set_one_line(ta, true);
-    lv_textarea_set_placeholder_text(ta, "Type to TX - Enter to send - Escape to clear - Enter after send to cancel");
+    lv_textarea_set_one_line(tx_box, true);
+    lv_textarea_set_placeholder_text(tx_box, "Type to TX - Enter to send - Escape to clear - Enter after send to cancel");
     lv_obj_set_style_pad_all(tx_box, 10, 0);
     lv_obj_set_style_text_font(tx_box, &sony_30, 0);
 
-    lv_group_add_obj(keyboard_group, ta);
-    lv_group_focus_obj(ta);
+    lv_group_add_obj(keyboard_group, tx_box);
+    lv_group_focus_obj(tx_box);
 
     return obj;
 }
