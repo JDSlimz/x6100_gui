@@ -102,7 +102,7 @@ lv_obj_t * pannel_init(lv_obj_t *parent) {
     lv_obj_add_event_cb(obj, pannel_update_cb, EVENT_PANNEL_UPDATE, NULL);
     lv_obj_add_flag(obj, LV_OBJ_FLAG_HIDDEN);
 
-    tx_box = lv_obj_create(parent);
+    tx_box = lv_textarea_create(parent); 
     lv_obj_add_style(tx_box, &cw_tx_style, 0);
     lv_textarea_set_one_line(tx_box, true);
     lv_textarea_set_placeholder_text(tx_box, "Type to TX - Enter to send - Escape to clear - Enter after send to cancel");
