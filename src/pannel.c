@@ -102,12 +102,25 @@ lv_obj_t * pannel_init(lv_obj_t *parent) {
     lv_obj_add_event_cb(obj, pannel_update_cb, EVENT_PANNEL_UPDATE, NULL);
     lv_obj_add_flag(obj, LV_OBJ_FLAG_HIDDEN);
 
-    tx_box = lv_textarea_create(parent);
-    lv_textarea_set_one_line(tx_box, true);
-    lv_textarea_set_placeholder_text(tx_box, "type to tx");
+    tx_box = lv_obj_create(parent);
     lv_obj_add_style(tx_box, &cw_tx_style, 0);
+    lv_obj_clear_flag(tx_box, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_set_width(tx_box, 775);
+    lv_obj_set_height(tx_box, 40);
+    lv_obj_align(tx_box, LV_ALIGN_BOTTOM_LEFT, 12, -12);
     lv_obj_add_event_cb(tx_box, tx_box_ready_cb, LV_EVENT_READY, NULL);
     lv_obj_add_flag(tx_box, LV_OBJ_FLAG_HIDDEN);
+
+    lv_obj_t *ta = lv_textarea_create(tx_box);
+    lv_obj_set_style_bg_opa(ta, LV_OPA_TRANSP, 0);
+    lv_obj_set_style_border_width(ta, 0, 0);
+    lv_obj_set_style_pad_all(ta, 10, 0);   // match container's padding
+    lv_obj_set_size(ta, lv_pct(100), lv_pct(100));
+    lv_textarea_set_one_line(ta, true);
+    lv_textarea_set_placeholder_text(ta, "Type to TX - Enter to send - Escape to clear - Enter after send to cancel");
+
+    lv_group_add_obj(keyboard_group, ta);
+    lv_group_focus_obj(ta);
 
     return obj;
 }
